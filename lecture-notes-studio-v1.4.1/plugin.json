@@ -1,0 +1,28 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "lecture-notes-studio",
+  "version": "1.4.1",
+  "description": "Convert lecture PPT/PDF into faithful Obsidian notes with linked exercises, AI walkthroughs, and transferable question-solving methods.",
+  "author": {
+    "name": "Plugin owner"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Lecture Notes Studio",
+        "shortDescription": "PPT notes for Obsidian",
+        "longDescription": "Source-faithful knowledge notes with direct Obsidian exercise links, readable overview spacing, and AI walkthroughs and method summaries for classroom problems.",
+        "developerName": "Plugin owner",
+        "category": "Productivity",
+        "capabilities": [
+          "Interactive"
+        ],
+        "defaultPrompt": [
+          "请把我上传的课程 PPT 整理成忠实于原文的 Obsidian 笔记，保留教学图片并生成 ZIP。",
+          "请将这份 PDF 课件按知识模块整理成完整笔记和知识点速览，不添加课外知识。",
+          "请检查这份课件笔记是否遗漏知识点、原始图片或页码来源。"
+        ]
+      }
+    }
+  }
+}

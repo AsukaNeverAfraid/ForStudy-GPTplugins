@@ -1,0 +1,25 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "email": "foxany1314@gmail.com",
+    "name": "Jingyu Lv"
+  },
+  "description": "从英语词表图片整理词汇，生成四份学习文件并打包为 listXX.zip，供 Obsidian 和 Anki 使用。",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "Interactive"
+        ],
+        "category": "Education",
+        "defaultPrompt": "整理我上传的英语词表图片，并生成四个一致的学习文件。",
+        "developerName": "Jingyu Lv",
+        "displayName": "English Vocabulary Studio",
+        "longDescription": "上传一张或多张大学英语词表图片后，识别并按 List 整理词汇，生成 Obsidian 兼容的词汇总表、例句与分组短文、情境短文合集，以及可导入 Anki 的 UTF-8 TSV 卡片；四份文件以 listXX 为统一前缀，打包为 listXX.zip，解压后可放入 Obsidian 库。",
+        "shortDescription": "整理词表并打包四份学习文件"
+      }
+    }
+  },
+  "name": "english-vocabulary-learning-studio",
+  "version": "1.0.2"
+}
