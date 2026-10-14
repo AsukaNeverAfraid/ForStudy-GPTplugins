@@ -1,0 +1,2 @@
+# 大学生实用GPTplugins
+根据自己的学习需求制作的一些ChatGPT插件
